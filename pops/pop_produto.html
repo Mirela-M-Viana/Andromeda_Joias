@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Dream Travel</title>
+     <link rel="stylesheet" href="../css/estilos.css">
+
+
+</head>
+<body>
+    <main>
+        <div class="pop">
+            <h1 id="nome-produto">TITULO</h1>
+            <img id="imagem-produto" src="" alt=""/>
+            <p id="descricao-produto">DESCRICAO</p>
+
+            <!-- CAPTURA AS INFORMAÇÕES DO PRODUTO -->
+            <script>
+                function getParametro(dado){
+                    const urlParams = new URLSearchParams(window.location.search);
+                    return urlParams.get(dado)
+
+
+                    
+                }
+
+                // PREENCHE NA PÁGINA AS INFORMAÇÕES RECEBIDAS
+                document.getElementById("nome-produto").textContent = getParametro("nome");
+                document.getElementById("imagem-produto").src= getParametro("imagem");
+                document.getElementById("descricao-produto").textContent = getParametro("descricao");
+            </script>
+        </div>
+    </main>
+</body>
+</html>
