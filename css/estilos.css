@@ -328,10 +328,87 @@ footer i {
 
 /* PAGINA DE CONTATOS */
 
-.titulo_Contatos{
-    margin-left: 2%;
+/* Sessão Contatos */
+.titulo_Contatos {
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 50px;
 }
 
-.texto_contatos{
+.texto_contatos {
     margin-left: 3%;
+    padding-left: 5%;
+}
+
+.texto-contatos {
+    margin-left: 20px;
+}
+
+/* Formulário */
+form {
+    margin: 20px 0 0 20%;
+}
+
+form label,
+form legend {
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+fieldset {
+    width: 75%;
+    padding-left: 5%;
+    margin-bottom: 2%;
+}
+
+.input-padrao {
+    display: block;
+    width: 85%;
+    padding: 10px 25px;
+    margin: 0 0 20px;
+}
+
+.chk {
+    margin: 20px 0;
+}
+
+/* Botão Enviar */
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    background: rgba(71, 33, 114, 0.733);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s all;
+}
+
+.enviar:hover {
+    background: rgba(71, 33, 114, 0.733);
+    transform: scale(1.1);
+}
+
+/* Retorno do Formulário */
+.formRetorno {
+    display: none;
+    margin-bottom: 15px;
+}
+
+.formRetorno p {
+    font-size: 24px;
+}
+
+/* Estrutura da Página */
+.body_contatos {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main_contatos {
+    flex: 1;
 }
