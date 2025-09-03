@@ -13,7 +13,7 @@
         // Captura a quantidade de produtos
         var quantidadeProduto = parseInt(clientesGeral.querySelector(".qtde").textContent);
 
-        // Captura o valor do produto
+        // Captura o valor unitario do produto
         var valorProduto = parseInt(clientesGeral.querySelector(".valor-unitario").textContent);
 
         //Validação
@@ -22,10 +22,16 @@
             clientesGeral.querySelector(".qtde").style.color= "red";
         }
         
+        else if(valorProduto < 1 || isNaN(valorProduto)){
+            clientesGeral.querySelector(".valor-unitario").textContent = "Unidade inválida"
+            //clienteGeral.querySelector(".valor.unitario").style.backgroundColor= "red"
+            //clienteGeral.style.backgroundColor= "red" //linha vermelha
+            clientesGeral.classList.add("info_invalida") //css
+        }
+        
         else {
             //calcula o valor total
             clientesGeral.querySelector(".valor-total").textContent = calcularTotal(quantidadeProduto,valorProduto);
-
             clientesGeral.querySelector(".valor-unitario", ".valor-total").textContent = parseFloat(valorProduto).toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
         }
 
@@ -33,10 +39,8 @@
     }
 
     //FUNÇÃO
-function calcularTotal(quantidadeProduto, valorProduto){
+        function calcularTotal(quantidadeProduto, valorProduto){
         var total = 0
-
         total = (quantidadeProduto * valorProduto);
-
         return total.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'})
 }

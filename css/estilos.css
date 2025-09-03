@@ -511,3 +511,10 @@ select {
     background: #472172;
     transform: scale(1.05);
 }
+
+
+
+.info_invalida{
+    background-color: red;
+    color: white;
+}
