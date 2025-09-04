@@ -3,7 +3,7 @@ var botaoEnviar = document.querySelector("#enviar");
 botaoEnviar.addEventListener("click", function(event){
     event.preventDefault();
 
-var form = document.querySelector("#frmContato");
+var form = document.querySelector("#formContato");
 
 if(form.email.value=='' && form.tel.value==''){
     return alert('Por Favor, preencha um e-mail e/ou um telefone para que eu possa retornar o seu contato.');

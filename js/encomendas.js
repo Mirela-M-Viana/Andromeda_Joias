@@ -44,3 +44,10 @@
         total = (quantidadeProduto * valorProduto);
         return total.toLocaleString('pt-BR', {style: 'currency', currency:'BRL'})
 }
+
+//Função que formata os valores em R$
+function formataValor(valor){
+    var valor_formatado = valor.toLocaleString('pt-BR', {style:'currency', currency:'BRL'});
+
+    return valor_formatado;
+}
