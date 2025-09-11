@@ -494,7 +494,7 @@ select {
     font-size: 14px;
 }
 
-/* Botão */
+/* Botão  add encomenda */
 .enviar {
     width: 100%;
     padding: 12px;
@@ -517,4 +517,28 @@ select {
 .info_invalida{
     background-color: red;
     color: white;
+}
+
+/* estilização da exclusão da encomenda */
+.fadeOut{
+    opacity: 0;
+    transition: 1s;
+
+}
+
+/* Estilização filtro */
+#buscar{
+    width: 19.5%;
+    height: 35px;
+    margin-bottom: 10px;
+    margin-left:5px
+}
+
+.TextBusca{
+    margin-left:5px;
+    margin-bottom: 5px;
+}
+
+.invisivel{
+    display: none;
 }

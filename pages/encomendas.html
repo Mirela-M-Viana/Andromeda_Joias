@@ -48,6 +48,9 @@
             <!-- <ul class="agendamento_titulos">
         <li class="agendamentos_item">Agendamento</li>
     </ul> -->
+    
+    <p class="TextBusca">Buscar</p>
+    <input type="text" name="buscar" id="buscar" required placeholder="Buscar pedido">
 
             <table>
                 <thead>
@@ -71,10 +74,18 @@
                     </tr>
 
                     <tr class="cliente">
-                        <td class="nome">Maria V.</td>
+                        <td class="nome">Mirela V.</td>
                         <td class="produto">Brinco Gold</td>
                         <td class="valor-unitario">1000</td>
                         <td class="qtde">0</td>
+                        <td class="valor-total"></td>
+                    </tr>
+
+                    <tr class="cliente">
+                        <td class="nome">Iza V.</td>
+                        <td class="produto">Colar Stella</td>
+                        <td class="valor-unitario">900</td>
+                        <td class="qtde">2</td>
                         <td class="valor-total"></td>
                     </tr>
 
@@ -86,13 +97,6 @@
                         <td class="valor-total"></td>
                     </tr>
 
-                    <tr class="cliente">
-                        <td class="nome">Iza V.</td>
-                        <td class="produto">Colar Stella</td>
-                        <td class="valor-unitario">900</td>
-                        <td class="qtde">2</td>
-                        <td class="valor-total"></td>
-                    </tr>
                 </tbody>
             </table>
         </main>
@@ -146,6 +150,8 @@
 
         <script src="../js/encomendas.js"></script>
         <script src="../js/formEncomendas.js"></script>
+        <script src="../js/removeEncomenda.js"></script>
+        <script src="../js/BuscarEncomeda.js"></script>
     </body>
 
 </html>
