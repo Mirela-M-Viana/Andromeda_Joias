@@ -392,6 +392,26 @@ fieldset {
     transform: scale(1.1);
 }
 
+/* Botão API */
+.bto-principalAPI{
+    width: 17%;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    margin-left: 41.5%;
+    background: rgba(71, 33, 114, 0.733);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s all;
+ }
+
+ .bto-principalAPI:hover {
+    background: rgba(71, 33, 114, 0.733);
+    transform: scale(1.1);
+}
+
 /* Retorno do Formulário */
 .formRetorno {
     display: none;
