@@ -562,3 +562,31 @@ select {
 .invisivel{
     display: none;
 }
+
+/* Barra de pesquisa em Produtos */
+.search {
+    display: flex;
+    align-items: center;
+    border: 1px solid #545252d1;
+    background-color: #f7f7f7;
+    width: 400px;
+    margin: 45px auto 25px;
+    border-radius: 20px;
+    padding: 8px 12px;
+    color: #4b4b4b;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 16px;
+}
+
+.search label {
+    height: 20px;
+    margin-right: 8px;
+    cursor: pointer;
+}

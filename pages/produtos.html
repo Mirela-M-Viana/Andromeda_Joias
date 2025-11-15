@@ -8,15 +8,17 @@
     
     <title>Andrômeda</title>
     
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
 
     <script>
-        alert('Conheça nossos produtos');
+        // alert('Conheça nossos produtos');
         
-        dia = new Array("Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado");
-        mes = new Array ("Janeiro", "Fevereiro", "Março", "Abril");
-        data = new Date;
+        // dia = new Array("Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado");
+        // mes = new Array ("Janeiro", "Fevereiro", "Março", "Abril");
+        // data = new Date;
 
         //POP-UP DE DETALHES DO PRODUTO
             function abrirDetalhes(nome,imagem,descricao){
@@ -47,7 +49,12 @@
 
     <div class="produto">
         <h1 class="titulo_produtos">Produtos</h1>
-                
+                <div class="search">
+        <label for="searchInput">
+            <span class="material-symbols-outlined">search</span>
+        </label>
+            <input type="text" id="searchInput" placeholder="Pesquisar produto...">
+    </div>
 
         <p class="text_produtos">Na Andrômeda Joalheria, cada peça é criada para refletir brilho, elegância e sofisticação. Trabalhamos com joias exclusivas em prata e ouro, 
             inspiradas no universo e na beleza das estrelas. Aqui você encontra anéis, colares, brincos e pulseiras que unem design moderno, qualidade impecável e um toque atemporal.<br>
@@ -56,6 +63,8 @@
 
 
     </div>
+
+    
 
     <div class="container">
         <script>
@@ -149,6 +158,9 @@
 
     <script src="/pops/pop_produto.html"></script>
     
+    <script src="/js/BarraPesquisa.js"></script>
+
+
 </body>
         
 </html>
