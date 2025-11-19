@@ -87,7 +87,7 @@ nav li:hover {
 }
 
 .titulo_sobreNós{
-    font-size: 200%;
+    font-size: 250%;
     clear: left;
     text-align: center;
 }
@@ -114,7 +114,7 @@ nav li:hover {
 }
 
 .titulo_estabelecimento {
-    font-size: 2.5rem;
+    font-size: 200%;
     margin-bottom: 20px;
 }
 
@@ -143,7 +143,7 @@ nav li:hover {
 }
 
 .titulo_beneficios {
-    font-size: 2.5rem;
+    font-size: 200%;
     width: 100%;
     text-align: center;
     margin-bottom: 30px;
@@ -269,8 +269,8 @@ footer i {
     margin: 8px 0;
 }
 
-.titulo_produtos, .titulo_Passeios {
-    font-size: 2rem;
+.titulo_produtos {
+    font-size: 250%;
     text-align: center;
     color: #1f1f1f;
     margin-bottom: 10px;
@@ -327,26 +327,48 @@ footer i {
 }
 
 /* PAGINA DE CONTATOS */
+/* Estrutura da Página */
+.body_contatos {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main_contatos {
+    flex: 1;
+}
 
 /* Sessão Contatos */
-.titulo_Contatos {
-    font-size: 40px;
-    font-weight: bold;
-    margin-left: 50px;
+.tituloContatos {
+    font-size: 250%;
+    text-align: center;
+    color: #1f1f1f;
+    margin-bottom: 10px;
 }
+
 
 .texto_contatos {
-    margin-left: 3%;
-    padding-left: 5%;
+    text-align: center;       
+    padding: 0 5%;            
+    margin: 0 auto;           
+    line-height: 1.2;        
+    padding-bottom: 20px;     
 }
 
-.texto-contatos {
-    margin-left: 20px;
+p.texto-contatos {
+    text-align: center !important;
 }
+
 
 /* Formulário */
 form {
     margin: 20px 0 0 20%;
+}
+
+fieldset {
+    width: 75%;
+    padding-left: 5%;
+    margin-bottom: 2%;
 }
 
 form label,
@@ -354,12 +376,6 @@ form legend {
     display: block;
     font-size: 20px;
     margin: 0 0 10px;
-}
-
-fieldset {
-    width: 75%;
-    padding-left: 5%;
-    margin-bottom: 2%;
 }
 
 .input-padrao {
@@ -377,7 +393,7 @@ fieldset {
 .enviar {
     width: 40%;
     padding: 15px 0;
-    margin-bottom: 20px;
+    margin: 20px auto;        
     background: rgba(71, 33, 114, 0.733);
     color: white;
     font-weight: bold;
@@ -385,32 +401,15 @@ fieldset {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.2s all;
+    display: block;           
 }
 
 .enviar:hover {
-    background: rgba(71, 33, 114, 0.733);
-    transform: scale(1.1);
+    background: rgba(71, 33, 114, 0.85);
+    transform: scale(1.05);
+    transition: 0.3s ease;   /* Suaviza a animação */
 }
 
-/* Botão API */
-.bto-principalAPI{
-    width: 17%;
-    padding: 15px 0;
-    margin-bottom: 20px;
-    margin-left: 41.5%;
-    background: rgba(71, 33, 114, 0.733);
-    color: white;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.2s all;
- }
-
- .bto-principalAPI:hover {
-    background: rgba(71, 33, 114, 0.733);
-    transform: scale(1.1);
-}
 
 /* Retorno do Formulário */
 .formRetorno {
@@ -422,16 +421,12 @@ fieldset {
     font-size: 24px;
 }
 
-/* Estrutura da Página */
-.body_contatos {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
 
-.main_contatos {
-    flex: 1;
-}
+
+
+
+
+
 
 /* SESSÃO ENCOMENDAS */
 .main_encomendasForm {
@@ -443,7 +438,7 @@ fieldset {
 
 /* Título */
 .titulo_encomendas {
-    font-size: 28px;
+    font-size: 250%;
     font-weight: bold;
     text-align: center;
     margin-bottom: 20px;
@@ -467,6 +462,30 @@ th, td{
     border: 1px solid black;
     text-align: center;
 }
+
+
+
+/* Botão API */
+.bto-principalAPI{
+    width: 17%;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    margin-left: 41.5%;
+    background: rgba(71, 33, 114, 0.733);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s all;
+ }
+
+ .bto-principalAPI:hover {
+     background: rgba(71, 33, 114, 0.85);
+    transform: scale(1.05);
+    transition: 0.3s ease;   
+}
+
 
 /* Retorno do formulário */
 .divRetorno {
@@ -528,8 +547,9 @@ select {
 }
 
 .enviar:hover {
-    background: #472172;
+    background: rgba(71, 33, 114, 0.85);
     transform: scale(1.05);
+    transition: 0.3s ease;   
 }
 
 
