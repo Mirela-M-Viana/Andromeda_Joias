@@ -43,9 +43,9 @@ function montaTR(dadosEncomenda){
 
     tr.appendChild(montaTD(dadosEncomenda.nome))
     tr.appendChild(montaTD(dadosEncomenda.produto)) 
-    tr.appendChild(montaTD(formataValor(parseFloat(dadosEncomenda.unitario))))
+    tr.appendChild(montaTD(formataValor(parseFloat(dadosEncomenda.valorUnitario))))
     tr.appendChild(montaTD(dadosEncomenda.qtde))   
-    tr.appendChild(montaTD(calcularTotal(dadosEncomenda.qtde, dadosEncomenda.unitario)))
+    tr.appendChild(montaTD(calcularTotal(dadosEncomenda.qtde, dadosEncomenda.valorUnitario)))
 
     return tr
 }

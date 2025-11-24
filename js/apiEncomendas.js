@@ -9,6 +9,7 @@ botãoAPI.addEventListener("click", function(){
         var novaEncomenda = JSON.parse(respostaAPI)
         
         novaEncomenda.forEach(function(cadaEncomenda){
+            console.table(cadaEncomenda)
             addEncomendaTabela(cadaEncomenda)
         })
     })
