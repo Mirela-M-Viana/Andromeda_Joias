@@ -686,26 +686,3 @@ select {
     z-index: 2;
     box-shadow: 0 12px 30px rgba(0,0,0,0.25);
 }
-
-/* Botões */
-.btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: white;
-    border: none;
-    font-size: 26px;
-    border-radius: 50%;
-    padding: 10px 15px;
-    cursor: pointer;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background: #f1f1f1;
-}
-
-.prev { left: -60px; }
-.next { right: -60px; }
-
