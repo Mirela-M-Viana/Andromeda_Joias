@@ -1,42 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../img/star_icon.ico" type="image/x_icon">
 
-    
+
     <title>Andrômeda</title>
-    
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="../css/estilos.css">
 
     <script>
-        
-        //POP-UP DE DETALHES DO PRODUTO
-            function abrirDetalhes(nome,imagem,descricao){
-                const url = `../pops/pop_produto.html?nome=${encodeURIComponent(nome)}&imagem=${encodeURIComponent(imagem)}&descricao=${encodeURIComponent(descricao)}`;
-                window.open(url, "_blank", "width= 800, height= 700");
-            }
 
-    </script> 
+        //POP-UP DE DETALHES DO PRODUTO
+        function abrirDetalhes(nome, imagem, descricao) {
+            const url = `../pops/pop_produto.html?nome=${encodeURIComponent(nome)}&imagem=${encodeURIComponent(imagem)}&descricao=${encodeURIComponent(descricao)}`;
+            window.open(url, "_blank", "width= 800, height= 700");
+        }
+
+    </script>
 
 </head>
+
 <body>
     <header>
         <div class="divHeader">
-        
-            <img src="../img/Andromeda_logo.png" alt="Logo" title="Andromeda" class="logo"/>
+
+            <img src="../img/Andromeda_logo.png" alt="Logo" title="Andromeda" class="logo" />
 
             <nav>
                 <ul>
                     <!-- itens menu -->
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="../pages/contatos.html">Contatos</a></li>  
-                        <li><a href="../pages/encomendas.html"> | Encomendas</a></li>  
-                        
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../pages/contatos.html">Contatos</a></li>
+                    <li><a href="../pages/encomendas.html"> | Encomendas</a></li>
+
                 </ul>
             </nav>
         </div>
@@ -44,55 +46,57 @@
 
     <div class="produto">
         <h1 class="titulo_produtos">Produtos</h1>
-            <div class="search">
-                <label for="searchInput">
-                    <!-- <span class="material-symbols-outlined">search</span> -->
-                </label>
-                    <input type="text" id="searchInput" placeholder="Pesquisar produto...">
-            </div>
+        <div class="search">
+            <label for="searchInput">
+                <!-- <span class="material-symbols-outlined">search</span> -->
+            </label>
+            <input type="text" id="searchInput" placeholder="Pesquisar produto...">
+        </div>
 
-        <p class="text_produtos">Na Andrômeda Joalheria, cada peça é criada para refletir brilho, elegância e sofisticação. Trabalhamos com joias exclusivas em prata e ouro, 
-            inspiradas no universo e na beleza das estrelas. Aqui você encontra anéis, colares, brincos e pulseiras que unem design moderno, qualidade impecável e um toque atemporal.<br>
+        <p class="text_produtos">Na Andrômeda Joalheria, cada peça é criada para refletir brilho, elegância e
+            sofisticação. Trabalhamos com joias exclusivas em prata e ouro,
+            inspiradas no universo e na beleza das estrelas. Aqui você encontra anéis, colares, brincos e pulseiras que
+            unem design moderno, qualidade impecável e um toque atemporal.<br>
 
-        Descubra a joia perfeita para celebrar seus momentos mais especiais.</p>
+            Descubra a joia perfeita para celebrar seus momentos mais especiais.</p>
 
 
     </div>
 
-    
+
 
     <div class="container">
         <script>
-           const descAurora = `
+            const descAurora = `
            O Anel Aurora é a expressão máxima da elegância clássica. Com aro em prata polida e um diamante central lapidado em corte brilhante, 
            sua pedra é sustentada por delicadas garras que realçam ainda mais o brilho e a pureza da joia. Um design atemporal que transmite 
            sofisticação, ideal para celebrar momentos únicos e eternos.
                 `;
 
-            descStella=`
+            descStella = `
             O Colar Stella traz o encanto do céu noturno em uma joia sofisticada. A corrente em ouro reluz delicadamente, sustentando um pingente 
             em forma de estrela, que tem ao centro um brilhante cristal lapidado. Uma peça que simboliza luz, esperança e sonhos, perfeita para 
             iluminar qualquer ocasião especial.
             `;
 
-            descEstelares=`
+            descEstelares = `
             Os Brincos Estelares unem delicadeza e brilho em uma peça única. Com design em formato de estrela, cada brinco é realçado por 
             um cristal central que reflete a luz com intensidade, simbolizando a beleza e o encanto das noites estreladas. Um toque sofisticado 
             e atemporal para iluminar qualquer look.
             `;
 
-            descGold=`
+            descGold = `
             Brincos delicados em formato de meia-lua, banhados em ouro, que adicionam um toque sofisticado e moderno a qualquer look. 
             Perfeitos para quem busca elegância com simplicidade.
             `;
 
-            descLumina=`
+            descLumina = `
             Brincos elegantes em formato de meia-lua prateada, cuidadosamente desenhados para oferecer um toque de sofisticação discreta. No topo, 
             uma pedra brilhante adiciona um ponto de luz que valoriza o design minimalista da peça. Um acessório leve, moderno e versátil, 
             que reflete estilo e delicadeza em cada detalhe.
                     `;
 
-            descConstella=`
+            descConstella = `
             Pulseira prateada com design delicado, composta por três estrelas finamente trabalhadas. Cada estrela abriga uma pedra central 
             brilhante, que capta a luz com sutileza e encanto. Perfeita para quem tem uma conexão especial com o universo e deseja levar um 
             toque de magia estelar consigo todos os dias.
@@ -117,7 +121,7 @@
             <img src="../img/brincoEstrelaDourada.jpg" alt="Brincos estelares">
             <h2><strong>Brinco Estelar</strong></h2>
             <p>
-            <span class="preco">R$ 500</span>
+                <span class="preco">R$ 500</span>
         </div>
 
 
@@ -144,18 +148,20 @@
 
     </div>
 
-        
-      <footer>
+
+    <footer>
         <img src="../img/Andromeda_logo.png" alt="Logo" class="logo_footer">
-        <p>Entre em contato conosco:  <a href="https://wa.me/551194002-8922"><i class="bi bi-whatsapp"></i></a>(11) 94002-8922 <a href="http://instagram.com/Andromeda_joias"><i class="bi bi-instagram"></i></a>Andrômeda <a href="mailto:Andromeda.joias@gmail.com"><i class="bi bi-envelope"></i></a>Andromeda.joias@gmail.com</p>
+        <p>Entre em contato conosco: <a href="https://wa.me/551194002-8922"><i class="bi bi-whatsapp"></i></a>(11)
+            94002-8922 <a href="http://instagram.com/Andromeda_joias"><i class="bi bi-instagram"></i></a>Andrômeda <a
+                href="mailto:Andromeda.joias@gmail.com"><i class="bi bi-envelope"></i></a>Andromeda.joias@gmail.com</p>
 
     </footer>
 
     <script src="/pops/pop_produto.html"></script>
-    
+
     <script src="/js/BarraPesquisa.js"></script>
 
 
 </body>
-        
+
 </html>
