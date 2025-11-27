@@ -302,10 +302,11 @@ footer i {
 }
 
 .pop p {
-    padding: 2% 0 9% 15%;
+    padding: 2% 0 9% 7%;
     margin: 0;
     white-space: pre-line;
-    width: 70%;
+    width: 80%;
+    font-size: 120%;
 }
 
 #nome-produto,
@@ -314,8 +315,8 @@ footer i {
 }
 
 #imagem-produto {
-    width: 70%;
-    margin-left: 15%;
+    width: 55%;
+    margin-left: 20%;
 }
 
 /* ===========================
@@ -432,7 +433,7 @@ form legend {
 .main_encomendasForm {
     max-width: 500px;
     margin: 40px auto;
-    padding-left: 265px;
+    padding-left: 350px;
     font-family: Arial, sans-serif;
     margin-left: 250px;
 }
@@ -675,16 +676,16 @@ select {
     cursor: pointer;
 }
 
-.slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* Slide do meio destacado */
 .slide.active {
     transform: scale(1.2);
     opacity: 1;
     z-index: 2;
     box-shadow: 0 12px 30px rgba(0,0,0,0.25);
 }
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
