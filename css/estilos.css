@@ -426,6 +426,21 @@ form legend {
     font-size: 24px;
 }
 
+/* Retorno do formulário */
+.divRetorno {
+    display: none;
+    margin-bottom: 15px;
+    padding: 10px;
+    background: #f0f8ff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.divRetorno p {
+    font-size: 16px;
+    color: #333;
+}
+
 
 /* ===========================
    ENCOMENDAS
@@ -498,20 +513,6 @@ th, td{
 }
 
 
-/* Retorno do formulário */
-.divRetorno {
-    display: none;
-    margin-bottom: 15px;
-    padding: 10px;
-    background: #f0f8ff;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-}
-
-.divRetorno p {
-    font-size: 16px;
-    color: #333;
-}
 
 
 
@@ -615,7 +616,8 @@ th, td{
 
 /* ===============================
    CONF PADRÃO DOS FORMULÁRIOS 
-   =============================== */form {
+   =============================== */
+form {
     background: #fafafa;
     padding: 20px;
     margin-right: 15%;
