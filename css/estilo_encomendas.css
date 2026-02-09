@@ -1,0 +1,216 @@
+
+/* ===========================
+   ENCOMENDAS
+=========================== */
+.main_encomendasForm {
+    max-width: 500px;
+    margin: 40px auto;
+    padding-left: 350px;
+    font-family: Arial, sans-serif;
+    margin-left: 250px;
+}
+
+.titulo_encomendas {
+    font-size: 250%;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.titulo_Addencomendas{
+    font-size: 250%;
+    font-weight: bold;
+    text-align: center;
+    margin-top:  80px;
+    margin-bottom: 50px;
+}
+
+table{
+    width: 100%;
+    margin-bottom: 2%;
+    table-layout: fixed;
+}
+
+th{
+    font-weight: bold;
+    background-color:   rgba(71, 33, 114, 0.733);
+    color: white;
+}
+
+th, td{
+    padding: 10px;
+    margin: 0;
+    border: 1px solid black;
+    text-align: center;
+}
+
+
+
+/* Botão API */
+.bto-principalAPI{
+    width: 17%;
+    padding: 15px 0;
+    margin-bottom: 20px;
+    margin-left: 41.5%;
+    background: rgba(71, 33, 114, 0.733);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s all;
+ }
+
+
+
+ .bto-principalAPI:hover {
+     background: rgba(71, 33, 114, 0.85);
+    transform: scale(1.05);
+    transition: 0.3s ease;   
+}
+
+
+
+
+
+/* Botão  add encomenda */
+.enviar {
+    width: 100%;
+    padding: 12px;
+    background: #472172bb;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.enviar:hover {
+    background: rgba(71, 33, 114, 0.85);
+    transform: scale(1.05);
+    transition: 0.3s ease;   
+}
+
+
+
+.info_invalida{
+    background-color: red;
+    color: white;
+}
+
+/* estilização da exclusão da encomenda */
+.fadeOut{
+    opacity: 0;
+    transition: 1s;
+
+}
+
+/* Estilização filtro */
+#buscar{
+    display: flex;
+    align-items: center;
+    border: 1px solid #545252d1;
+    background-color: #f7f7f7;
+    width: 400px;
+    margin: 45px auto 25px;
+    border-radius: 20px;
+    padding: 8px 12px;
+    color: #4b4b4b;
+    height: 30px;
+}
+
+.busca_encomenda{
+     width: 100%;
+    padding: 8px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 16px;
+}
+
+.TextBusca{
+    margin-left:5px;
+    margin-bottom: 5px;
+}
+
+.invisivel{
+    display: none;
+}
+
+/* Barra de pesquisa em Produtos */
+.search {
+    display: flex;
+    align-items: center;
+    border: 1px solid #545252d1;
+    background-color: #f7f7f7;
+    width: 400px;
+    margin: 45px auto 25px;
+    border-radius: 20px;
+    padding: 8px 12px;
+    color: #4b4b4b;
+}
+
+#searchInput {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 16px;
+}
+
+.search label {
+    height: 20px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+
+/* ===============================
+   CONF PADRÃO DOS FORMULÁRIOS 
+   =============================== */
+form {
+    background: #fafafa;
+    padding: 20px;
+    margin-left: 32%;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    width: 70%;
+    padding: 10px;
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-padrao {
+    width: 93%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+select{
+    width: 99%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+
+
+
+
